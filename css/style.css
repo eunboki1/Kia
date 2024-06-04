@@ -1,0 +1,360 @@
+    
+@import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+.navbar {
+    margin-bottom: 0;
+    background-color:transparent;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    /* opacity: 0.5; */
+  }
+  
+  /* Add a gray color to all navbar links */
+  .navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+    
+  }
+  
+  /* On hover, the links will turn white */
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  
+  /* The active link */
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+  }
+  
+  /* Remove border color from the collapsible button */
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    
+  }
+  
+  /* Dropdown */
+  .open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+  }
+  
+  /* Dropdown links */
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  
+  /* On hover, the dropdown links will turn red */
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+
+body{
+    font-family: 'Noto Sans KR' , Arial , sans-serif , Hevetica;
+}
+ul,ol{list-style: none;}
+*{
+    
+    
+    padding: 0;
+    margin:0;
+}
+#myCarousel .carousel-inner .item img:nth-child(1){display: block;}
+#myCarousel .carousel-inner .item img:nth-child(2){display: none;}
+
+#myCarousel, .carousel-inner{
+    height: 950px;;
+}
+.carousel-caption{
+    position: absolute;
+    left:30px;
+    bottom:250px;
+    text-align: left;
+}
+#bestkia h3{
+font-size: 50px
+}
+#bestkia .box{
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+}
+#bestkia .nav-tabs{
+margin-bottom: 30px;
+}
+#bestkia .nav-tabs li.active a{
+/* background-color: red; */
+border-radius: 0;
+border: none;
+border-bottom: 1px solid   black;
+}
+#bestkia .box .col-sm-8 {
+   text-align: right;
+}
+
+#bestkia .box .price .rest{
+    float: right;
+    font-size:15px;
+    margin-top: 15px
+    ;
+}
+
+#bestkia .box .price{
+    font-size: 30px;
+ text-align:right;
+}
+
+#bestkia .box .btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px; 
+    font-weight: bold;
+    border-radius: 0;
+    margin-top: 10px;
+    
+}
+  
+#bestkia .box .btn-black{
+    background-color: black;
+    color: white;
+}
+#bestkia .box .btn-black:hover{
+    position: relative;
+    transition: all 0.5s;
+    background-color:#37434b;
+    /* transform: translateX(50px); */
+    z-index: 1;
+    opacity: 0.7;
+    color: #ddd;
+  
+}
+#news img{
+margin-left: 0;
+}
+#news .box{
+margin-right: 0;
+}
+
+
+.btn-box{
+text-align: center;
+margin-top: 30px;
+}
+.sort{
+margin: 30px;
+text-align: center;
+font-size: 12px;
+}
+#etc .box img{
+width: 25px;
+}
+#etc .box{
+padding: 15px;
+margin: 10px;
+font-size: 15px;
+
+}
+#etc .col-sm-3 a{
+    color: black;
+    text-decoration: none;
+}
+#etc .box div{
+   color: white;
+    text-align: right;
+    
+}
+#etc .box h4{
+font-size: 17px;
+font-weight: bold;
+}
+#etc .box img:nth-child(1){
+display: inline;
+}
+#etc .box img:nth-child(2){
+display: none
+}
+#etc .box:hover{
+    background-color: #05141F;
+    color: #eee;
+    text-decoration:none;
+    transition: all 0.5s;
+    
+}
+#etc .box:hover div{
+    transition: all 1s;
+    
+}
+
+#news .col-sm-6{
+float:right;
+height: 550px;
+}
+#news .col-sm-6:nth-child(2){
+background:  #697278;
+
+}
+#news .col-sm-4{
+padding-top: 50px;
+padding-bottom: 150px;
+}
+
+#footer1 .row:nth-child(1){
+    margin-bottom: 30px;
+}
+#footer1{
+
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+padding-right: 50px;
+background-color:#05141F;
+color:#eee;
+}
+#bestkia .box .col-sm-4, .col-sm-8{
+margin-top: 15px;
+}
+
+#news h3{
+font-size: 40px;
+}
+
+#news .box{
+padding: 40px;
+margin-top: 20px;
+}
+
+#news h5{
+font-size:18px;
+margin-bottom: 20px;
+font-weight: bold;
+color: #eee;
+}
+#news .box h4{
+font-size: 25px;
+color: #eee;
+margin-top: 30px;
+margin-bottom: 30px;
+font-weight: bold;
+} 
+#news .box p{
+font-size: 15px;
+color: #eee;
+line-height: 25px;
+}
+#news .box .btn-default{
+margin-top: 100px;
+}
+.badge{
+    float: right;
+}
+#footer1 .col-sm-3 li{
+    padding-top: 8px;
+}
+
+
+
+#footer1 .col-sm-6 li{
+   display: inline;
+    padding: 10px;
+    
+}
+#footer1 .col-sm-6 ul{
+    position: absolute;
+    right:0;
+}
+#footer1 .col-sm-6 li a{
+    padding: 5px;
+}
+#footer2{
+    color: #aaa;
+    background-color: #010E18;
+}
+#footer1 .dropdown-menu{
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+#footer2 .col-sm-6{
+    float: right;  
+}
+#footer2 .col-sm-6 li{
+    float:right
+}
+#news .col-sm-6 img:nth-child(1){display: block;}
+#news .col-sm-6 img:nth-child(2){display: none;}
+
+#news .col-sm-6{
+    padding: 0;
+
+}
+
+
+  #collapse{
+    display:none;
+  }
+@media screen and (max-width:767px) {
+    #myCarousel .carousel-inner .item img:nth-child(2){display: block;}
+    #myCarousel .carousel-inner .item img:nth-child(1){display: none;}
+    
+#news .col-sm-6:nth-child(1){
+    margin: 0 !important;
+    height: 400px;
+}
+#news .col-sm-6:nth-child(2){
+    margin: 0 !important;
+    height: 280px;
+}                 
+
+#news .col-sm-6 img:nth-child(1){display:none}
+#news .col-sm-6 img:nth-child(2){display:block}
+
+#footer1 .col-sm-6{
+    display:none
+}
+#footer1 .col-sm-3:nth-child(2){
+    display: none;
+}
+    
+#collapse{
+    display: block;
+}
+#collapse .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  #collapse .active, #collapse .collapsible:hover {
+    background-color: #555;
+  }
+  
+  #collapse.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  #collapse .active:after {
+    content: "\2212";
+  }
+  
+  #collapse .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+}
+#footer2 .container .row:nth-child(2){
+    display: none;
+}
