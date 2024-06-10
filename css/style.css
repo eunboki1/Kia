@@ -2,24 +2,118 @@
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Monoton);
 
+.carousel-control{
+  position:absolute;
+  width: 5%;
+
+}
+
+#myCarousel .btn-box .btn-black{
+  background-color: #05141F;
+  font-weight: bold; 
+  width: 100px;
+  margin-left: 10px;
+  color: white;
+  
+}
+#myCarousel .btn-box .btn-black:hover{
+   position: relative ; 
+   transition: all 0.5s;
+   background-color:#37434b ;
+   opacity: 0.7;
+   color: #ddd;
+
+
+}
+#myCarousel .btn-box .btn-default {
+  font-weight: bold; 
+  width: 100px
+}
+#myCarousel .btn-box{ 
+  border-radius: 0%;
+  position: absolute;
+  /* z-index: 999; */
+  background-color: transparent;
+ 
+}
+
+.navbar-fixed-top{
+  position: absolute;
+}
+
+
+
 .navbar {
+  height: 100px;
     margin-bottom: 0;
     background-color:transparent;
+    /* background-color:red; */
     border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
+    /* font-size: 11px !important; */
+    letter-spacing: 2px;
     /* opacity: 0.5; */
   }
   
+  #footer1 .dropup ul li a:hover{
+    background-color: #010E18;
+
+  }
+  #footer1 .dropup ul li a{
+    color: white;
+    position: relative;
+  }
+  #footer1 .dropup ul{
+    bottom: 50px;
+    padding: 0;
+    border-radius: 0;
+    border: solid 1px #37434B;
+    background-color: #010E18;
+
+  }
   /* Add a gray color to all navbar links */
-  .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+  .navbar li a, .navbar-brand 
+  {
+    /* width: 120px; */
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 0px;
+    padding-left: 30px;
+
+  }
+  .navbar-left .dropdown-menu{
+    min-width: 81px !important;
+  }
+  .navbar li ul li a{
+    
+    width: 0px;
+  }
+  .navbar li ul li a {
+    width: 80px;
+    padding-left: 20px;
+  }
+  .navbar-left>.dropdown li{
+    /* width: 100px; */
+    /* border-radius: 50%; */
+    text-align: center;
+  }
+  .navbar-left>.dropdown{
+    margin-left: 1000px;
+    text-align: center
+  }
+  .navbar-brand img{
+    /* background-color: #000; */
+    /* justify-content: center; */
+    width: 100px;
+    margin-left:900px ;
+    margin-top: 40px;
     
   }
   
   /* On hover, the links will turn white */
   .navbar-nav li a:hover {
-    color: #fff !important;
+    color: #fff 
+    
   }
   
   /* The active link */
@@ -35,28 +129,63 @@
   }
   
   /* Dropdown */
-  .open .dropdown-toggle {
+  nav .open .dropdown-toggle {
     color: #fff ;
-    background-color: #555 !important;
+    background-color: transparent !important;
   }
   
   /* Dropdown links */
-  .dropdown-menu li a {
+  nav .dropdown-menu li a {
     color: #000 !important;
   }
   
   /* On hover, the dropdown links will turn red */
-  .dropdown-menu li a:hover {
-    background-color: red !important;
+  nav  .dropdown-menu li a:hover {
+    background-color: black !important;
   }
 
 body{
     font-family: 'Noto Sans KR' , Arial , sans-serif , Hevetica;
 }
 ul,ol{list-style: none;}
-*{
-    
-    
+
+#news .col-sm-4 a:link { text-decoration: none; color: black;
+font-size: 18px;
+}
+#news a:visited { color:black; }
+#news a:hover { color:black; }
+#news a:active { color:black; }
+
+#collapse .content a:link { text-decoration: none; color: #1f1c1c;
+}
+#collapse .content  a:visited { color:#1f1c1c; }
+#collapse .content  a:hover { color:#1f1c1c; }
+#collapse .content  a:active { color:#1f1c1c; }
+
+
+#footer1 .col-sm-3 a:link { text-decoration: none; color: white;
+}
+#footer1 .col-sm-3  a:visited { color:white; }
+#footer1 .col-sm-3  a:hover { color:white; }
+#footer1 .col-sm-3  a:active { color:white; }
+
+#footer1 .col-sm-3:nth-child(2) a:link { text-decoration: none; color: gray;
+}
+#footer1 .col-sm-3:nth-child(2)  a:visited { color:gray; }
+#footer1 .col-sm-3:nth-child(2)  a:hover { color:gray; }
+#footer1 .col-sm-3:nth-child(2)  a:active { color:gray; }
+
+#footer2 .col-sm-6 ul a:link { text-decoration: none; color: gray;
+}
+#footer2 .col-sm-6 ul a:visited { color:gray; }
+#footer2 .col-sm-6 ul a:hover { color:gray; }
+#footer2 .col-sm-6 ul a:active { color:gray; }
+
+#footer2 .col-sm-10 li{
+    font-size: 13px;
+}
+
+*{  
     padding: 0;
     margin:0;
 }
@@ -73,18 +202,35 @@ ul,ol{list-style: none;}
     text-align: left;
 }
 #bestkia h3{
-font-size: 50px
+font-size: 50px 
 }
 #bestkia .box{
 padding: 20px;
 border: 1px solid #ddd;
 border-radius: 10px;
 }
-#bestkia .nav-tabs{
+#bestkia .nav-tabs {
+  display: flex;
+  
 margin-bottom: 30px;
+/* background-color: bl; */
+}
+#bestkia .nav-tabs{
+  justify-content: center;
+}
+
+#bestkia .nav-tabs li a{
+  font-weight: bold;
+  background-color: white;
+  color: #aaa;
+  border: none;
+  font-size: 20px;
+  
+
 }
 #bestkia .nav-tabs li.active a{
 /* background-color: red; */
+color:#000;
 border-radius: 0;
 border: none;
 border-bottom: 1px solid   black;
@@ -117,18 +263,45 @@ border-bottom: 1px solid   black;
   
 #bestkia .box .btn-black{
     background-color: black;
+;
     color: white;
 }
 #bestkia .box .btn-black:hover{
-    position: relative;
+    position: relative ; 
     transition: all 0.5s;
-    background-color:#37434b;
+    background-color:#37434b ;
     /* transform: translateX(50px); */
     z-index: 1;
     opacity: 0.7;
     color: #ddd;
   
 }
+.modal-header{
+  padding: 10px;
+  margin: 0;
+  text-align: center !important;
+
+}
+
+#bestkia .box .col-sm-8 .btn {
+   padding: 0px; 
+   margin: 0; 
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+.modal-body ul{
+  padding-left: 30px;
+  text-align: left;
+  line-height: 30px;
+  list-style: circle;
+}
+.modal-content{
+  position: absolute;
+  top: 250px;
+  
+}
+
 #news img{
 margin-left: 0;
 }
@@ -203,7 +376,6 @@ padding-bottom: 150px;
     margin-bottom: 30px;
 }
 #footer1{
-
 padding-top: 50px;
 padding-bottom: 50px;
 padding-left: 50px;
@@ -211,12 +383,15 @@ padding-right: 50px;
 background-color:#05141F;
 color:#eee;
 }
-#bestkia .box .col-sm-4, .col-sm-8{
+#bestkia .box .col-sm-4
+,.col-sm-8
+{
 margin-top: 15px;
 }
 
 #news h3{
 font-size: 40px;
+padding-bottom: 30px;
 }
 
 #news .box{
@@ -243,7 +418,9 @@ color: #eee;
 line-height: 25px;
 }
 #news .box .btn-default{
-margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom:30px ;
 }
 .badge{
     float: right;
@@ -293,7 +470,96 @@ margin-top: 100px;
   #collapse{
     display:none;
   }
+
+  #footer2{
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #footer2 .row .col-sm-6 li{
+    padding-left: 30px;
+  }
+  #footer2 .row .col-sm-2 ul{
+    margin-top:50px;
+  }
+  #footer1 #sb{
+    position: relative;
+    /* background-color: red; */
+    width: 450px;
+    text-align: right;
+    top:310px;
+    left:130px ;
+    color: #eee;
+
+}
+
+#footer1 .dropup { 
+    text-align: left;
+    /* marign:20px; */
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+     background-color: #010E18;
+    position: absolute;
+    width: 250px;
+    right: 50px;
+    top:295px;
+    height: 50px;
+    padding: 10px;
+    
+}
+#footer1 .dropup .btn{
+    text-align: left;
+    background-color: #010E18;
+    border: #05141F;
+    color: #eee;
+    width: 100%;
+    /* height: ; */
+}
+#footer1 .dropup .caret{
+    float: right;
+    padding-top: 11px;
+
+}
+#footer2 .container .row:nth-child(2){
+    display: none;
+}
+  /* ----------미디어스크린------------------------------------ */
 @media screen and (max-width:767px) {
+  .carousel-control{
+    position:absolute;
+    width: 10%;
+  
+  }
+
+
+  #bestkia .box .col-sm-4, .col-sm-8{
+    display: inline-block;
+  }
+  #bestkia .box .col-sm-8{
+    float: right;
+  }
+  
+  #myCarousel, .carousel-inner{
+    height:100% ;
+  }
+  .carousel-caption{
+    left: 20px;
+    bottom: 100px;
+    
+  }
+ 
+  
+  #footer2{
+    background-color: #05141F;
+  }
+
+#footer2 .col-sm-2{
+  display: none;
+}
+
     #myCarousel .carousel-inner .item img:nth-child(2){display: block;}
     #myCarousel .carousel-inner .item img:nth-child(1){display: none;}
     
@@ -304,6 +570,7 @@ margin-top: 100px;
 #news .col-sm-6:nth-child(2){
     margin: 0 !important;
     height: 280px;
+    width: 100%;
 }                 
 
 #news .col-sm-6 img:nth-child(1){display:none}
@@ -317,22 +584,34 @@ margin-top: 100px;
 }
     
 #collapse{
+  /* width: 250px; */
+  /* right: 50px; */
+  /* top:295px; */
+  /* height: 50px; */
+  /* padding: 10px; */
+  
     display: block;
 }
 #collapse .collapsible {
-    background-color: #777;
+
+    background-color: #05141F;
     color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border-top: inset 1px #aaa; 
+    border-left: none;
+    border-right: none;
+    border-bottom: outset  1px #aaa; 
     text-align: left;
+    padding-left: 50px;
+    font-weight: bold;
     outline: none;
     font-size: 15px;
   }
   
   #collapse .active, #collapse .collapsible:hover {
-    background-color: #555;
+    background-color: #05141F;
   }
   
   #collapse.collapsible:after {
@@ -343,18 +622,155 @@ margin-top: 100px;
     margin-left: 5px;
   }
   
-  #collapse .active:after {
-    content: "\2212";
+  #collapse .glyphicon-chevron-up{
+    display: none;
+
   }
-  
+  #collapse .active .glyphicon-chevron-down{
+    display: none;
+  }
+  #collapse .active .glyphicon-chevron-up{
+    display: inline;
+  }
+
+
+ 
+  #collapse .content ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   #collapse .content {
-    padding: 0 18px;
+    line-height: 20px;
+    padding: 0px 50px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: #eee;
+    color: #05141F;
+    font-size: 15px;
+    /* margin-bottom: 30px; */
+    
   }
-}
-#footer2 .container .row:nth-child(2){
+  #news .box p{
     display: none;
-}
+  }
+  #news .col-sm-4:nth-child(1){
+    padding-top: 60px;
+    padding-bottom: 30px;
+    }
+  #news .col-sm-4:nth-child(2){
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+  #news .col-sm-4:nth-child(3){
+    padding-top: 30px;
+    padding-bottom: 100px;
+    }
+    .navbar-brand img{
+      /* z-index: 0; */
+      position: absolute;
+      /* background-color: red; */
+      margin-left:0px;
+      margin-top:0px;
+      /* padding: 0; */
+    }
+    .nav .dropdown{
+      display: none;
+      color: black
+    }
+    #myNavbar .nav ul li a {
+      color:black ;
+      margin: 30px;
+    }
+   
+    
+    #myNavbar .nav{
+   
+      /* height: 800px; */
+      /* padding: 50px; */
+      overflow: hidden;
+    /* height: 200%; */
+      
+      margin-top: 0px;
+      /* margin-bottom: ; */
+      /* scrollbar-ta: none; */
+      /* color: black; */
+      background-color: white
+      /* z-index:2; */
+    }
+    .navbar li a, .navbar-brand {
+      color: #000 !important;
+      /* padding: 50px; */
+      /* margin: 50px; */
+    
+      
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+      background-color: white
+    }
+    .navbar-default .navbar-toggle:hover{
+      background-color: transparent;
+    }
+    .navbar-default .navbar-toggle:active{
+      background-color: transparent;
+    }
+    .navbar-default .navbar-toggle:focus{
+      background-color: transparent;
+    }
+
+    .navbar-nav li a:hover {
+      color: #aaa !important;
+      
+    }
+    #footer2 .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+      justify-content: center;
+    }
+
+    #bestkia .box{
+      margin-top: 20px;
+    }
+    #footer2 .row .col-sm-6 ul :nth-child(6){
+      /* background-color: red; */
+      margin-right: 40px;
+    }
+    #footer2 .row .col-sm-6 ul :nth-child(5){
+      /* background-color: red; */
+      margin-right: 60px;
+    }
+
+    #footer2 .row .col-sm-6 ul{
+      
+      width: 500px;
+      position: relative;
+      line-height:40px;
+      display: flex;
+      flex-wrap: wrap-reverse !important;
+      flex-direction: row-reverse !important;
+      margin-right: 130px;
+      /* text-align: left?; */
+      /* align-self: center !important; */
+    }
+    /* #footer2 .row .col-sm-6{
+    
+      
+    justify-content: center;
+    
+  } */
+  #left{
+    
+    display: flex;
+    /* padding-right: 100px; */
+  }
+
+    }
+
+    /* 베스트 기아 안에 안전성 모달 팝업집어넣기 */
+
+      
+      
+      
+      
+   
