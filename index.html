@@ -15,7 +15,21 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function (e) {
+                if ($(window).scrollTop() > 1800) {
+                    $("#jquery").addClass("animate__animated animate__fadeInUp")
+                }
+            });
+            $("navbar-toggle").click(function (e) {
+                $("navbar").hide()
+            });
+        });
+
+    </script>
 
 </head>
 
@@ -77,9 +91,9 @@
                         또 하나의 대담한 발걸음</p>
                     <h3>The Kia EV3</h3>
                     <div class="btn-box">
-                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight" >자세히 보기</a>
+                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight">자세히 보기</a>
                         <a href="#" class="btn btn-black animate__animated animate__fadeInRight">견적내기</a>
-            
+
                     </div>
                 </div>
             </div>
@@ -91,9 +105,9 @@
                     <p>The Energetic Vehicle</p>
                     <h3>The new EV6</h3>
                     <div class="btn-box">
-                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight" >자세히 보기</a>
+                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight">자세히 보기</a>
                         <a href="#" class="btn btn-black animate__animated animate__fadeInRight">견적내기</a>
-            
+
                     </div>
                 </div>
             </div>
@@ -105,14 +119,14 @@
                     <p>기아를 만나는 새로운 방법</p>
                     <h3>기아 인증중고차 홈페이지</h3>
                     <div class="btn-box">
-                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight" >자세히 보기</a>
+                        <a href="#" class="btn btn-default animate__animated animate__fadeInRight">자세히 보기</a>
                         <a href="#" class="btn btn-black animate__animated animate__fadeInRight">견적내기</a>
-            
+
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -123,7 +137,7 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-        
+
     </div>
     <!-- ---------------베스트기아---------------------------------------- -->
     <div id="bestkia" class="container">
@@ -758,7 +772,8 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <!-- Modal -->
-                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
                                     <div class="modal fade" id="myModal" role="dialog" id="modal">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
@@ -770,12 +785,17 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul>
-                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용 www.kncap.org 참조)</li>
-                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를 종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.</li>
+                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용
+                                                            www.kncap.org 참조)</li>
+                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를
+                                                            종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.
+                                                        </li>
                                                         <li>1등급일수록 가장 안전한 차량입니다.</li>
-                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를 실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길 바랍니다.</li>
+                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를
+                                                            실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길
+                                                            바랍니다.</li>
                                                     </ul>
-                                                
+
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default"
@@ -848,7 +868,8 @@
                                     >충돌 안전
                                 </div>
                                 <div class="col-sm-8">
-                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
                                     <div class="modal fade" id="myModal" role="dialog" id="modal">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
@@ -860,12 +881,17 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul>
-                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용 www.kncap.org 참조)</li>
-                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를 종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.</li>
+                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용
+                                                            www.kncap.org 참조)</li>
+                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를
+                                                            종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.
+                                                        </li>
                                                         <li>1등급일수록 가장 안전한 차량입니다.</li>
-                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를 실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길 바랍니다.</li>
+                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를
+                                                            실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길
+                                                            바랍니다.</li>
                                                     </ul>
-                                                
+
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default"
@@ -937,7 +963,8 @@
                                     >충돌 안전
                                 </div>
                                 <div class="col-sm-8">
-                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                        data-target="#myModal"><img src="img/icon_info_outline.svg"> </button>
                                     <div class="modal fade" id="myModal" role="dialog" id="modal">
                                         <div class="modal-dialog">
                                             <!-- Modal content-->
@@ -949,12 +976,17 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul>
-                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용 www.kncap.org 참조)</li>
-                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를 종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.</li>
+                                                        <li>본 신차안전도 평가결과는 국토교통부 주관 안전도 평가 후 발표된 자료입니다.(교통안전공단 자세한 내용
+                                                            www.kncap.org 참조)</li>
+                                                        <li>안전도 종합등급 안전도평가에서 실시하고 있는 정면충돌, 측면충돌, 보행자 등 22개 항목의 평가 결과를
+                                                            종합하여 평가 대상 차량의 안전도를 등급(1~5등급)과 점수(100점 만점)로 소비자들에게 제공합니다.
+                                                        </li>
                                                         <li>1등급일수록 가장 안전한 차량입니다.</li>
-                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를 실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길 바랍니다.</li>
+                                                        <li>매년 자동차 판매수가 많거나 판매가 급증 추세인 차 그리고 과거 평가를 하지 않은 모델 중에서 평가를
+                                                            실시하며, 평가에 사용된 차량의 에어백 등의 안전장비는 실제 구입하시는 차량과 다를 수 있으므로 확인 하시길
+                                                            바랍니다.</li>
                                                     </ul>
-                                                
+
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default"
@@ -1082,7 +1114,7 @@
             </div>
 
         </div>
-        <div class="row">
+        <div class="row" id="jquery">
             <div class="col-sm-4">
                 <h4 style="color: gray;">뉴스</h4>
                 <b> <a href="#">
@@ -1205,7 +1237,7 @@
             SNS
             <div class="glyphicon glyphicon-chevron-down " style="float: right;"></div>
             <div class="glyphicon glyphicon-chevron-up " style="float: right;"></div>
-        </button >
+        </button>
         <div class="content ">
             <p>
             <ul>

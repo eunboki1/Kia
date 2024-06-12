@@ -2,6 +2,9 @@
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Monoton);
 
+
+
+
 .carousel-control{
   position:absolute;
   width: 5%;
@@ -526,6 +529,8 @@ line-height: 25px;
 #footer2 .container .row:nth-child(2){
     display: none;
 }
+
+
   /* ----------미디어스크린------------------------------------ */
 @media screen and (max-width:767px) {
   .carousel-control{
@@ -644,7 +649,7 @@ line-height: 25px;
     padding: 0px 50px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition:  0.2s ease-out;
     background-color: #eee;
     color: #05141F;
     font-size: 15px;
@@ -683,15 +688,16 @@ line-height: 25px;
       margin: 30px;
     }
    
-    
-    #myNavbar .nav{
    
-      /* height: 800px; */
+    #myNavbar {
+      /* position: relative; */
+      /* z-index:999; */
+      /* height:100%; */
       /* padding: 50px; */
-      overflow: hidden;
+      /* overflow-block: auto; */
     /* height: 200%; */
-      
-      margin-top: 0px;
+      /* width: 100%; */
+      /* margin-top: -50px; */
       /* margin-bottom: ; */
       /* scrollbar-ta: none; */
       /* color: black; */
@@ -765,9 +771,15 @@ line-height: 25px;
     /* padding-right: 100px; */
   }
 
-    }
+  #bestkia .nav-tabs li a{
+     
+    font-size: 4vw;
+    
+  
+  }
 
-    /* 베스트 기아 안에 안전성 모달 팝업집어넣기 */
+    }
+   
 
       
       
