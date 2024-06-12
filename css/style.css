@@ -691,7 +691,7 @@ line-height: 25px;
    
     #myNavbar {
       /* position: relative; */
-      /* z-index:999; */
+      z-index:999;
       /* height:100%; */
       /* padding: 50px; */
       /* overflow-block: auto; */
