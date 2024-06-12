@@ -3,8 +3,10 @@
 @import url(http://fonts.googleapis.com/css?family=Monoton);
 
 
-
-
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
 .carousel-control{
   position:absolute;
   width: 5%;
@@ -533,6 +535,9 @@ line-height: 25px;
 
   /* ----------미디어스크린------------------------------------ */
 @media screen and (max-width:767px) {
+  body{
+    scrollbar-width: none;
+  }
   .carousel-control{
     position:absolute;
     width: 10%;
@@ -777,7 +782,10 @@ line-height: 25px;
     
   
   }
-
+  *{
+    padding: 0;
+    margin: 0;
+  }
     }
    
 
