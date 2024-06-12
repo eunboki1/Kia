@@ -29,6 +29,7 @@ html,body{
    color: #ddd;
 
 
+
 }
 #myCarousel .btn-box .btn-default {
   font-weight: bold; 
@@ -147,6 +148,7 @@ html,body{
   /* On hover, the dropdown links will turn red */
   nav  .dropdown-menu li a:hover {
     background-color: black !important;
+    color: white !important;
   }
 
 body{
@@ -688,6 +690,7 @@ line-height: 25px;
       display: none;
       color: black
     }
+    
     #myNavbar .nav ul li a {
       color:black ;
       margin: 30px;
@@ -785,6 +788,10 @@ line-height: 25px;
   *{
     padding: 0;
     margin: 0;
+  }
+  #myNavbar .navbar-nav li:hover a{
+    background-color: #05141F;
+    color: white;
   }
     }
    
